@@ -1,12 +1,9 @@
 //your JS code here. If required.
 let student = {
-	name: "Dev"
+	name: "Dev",
+	getKeys: () => {
+		return Object.keys(student)
+	}
 }
 
-function getKeys(obj){
-	return Object.keys(obj)
-}
-
-
-
-console.log(getKeys(student))
+console.log(student.getKeys())
